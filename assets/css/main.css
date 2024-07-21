@@ -1002,9 +1002,12 @@ section,
   }
 }
 
-.portfolio .portfolio-item {
-  position: relative;
+.portfolio-item img {
+  width: 100%; /* Set the width to 100% to make it responsive */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the aspect ratio is maintained */
 }
+
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
@@ -1626,3 +1629,10 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.fixed-size {
+  width: 650px;  /* Fixed width */
+  height: 650px; /* Fixed height */
+  object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
